@@ -204,7 +204,8 @@ string MyTool(string parameter) => "Result";
 
 ## Resources
 
-- [Microsoft Agent Framework Documentation](https://learn.microsoft.com/en-us/dotnet/ai/)
-- [.NET Aspire Documentation](https://learn.microsoft.com/en-us/dotnet/aspire/)
-- [GitHub Models](https://github.com/marketplace/models)
-- [Microsoft.Extensions.AI Documentation](https://learn.microsoft.com/en-us/dotnet/ai/)
+- [Microsoft Agent Framework Documentation](https://learn.microsoft.com/dotnet/ai/)
+- [.NET Aspire Documentation](https://learn.microsoft.com/dotnet/aspire/)
+- [GitHub Models Documentation](https://docs.github.com/en/github-models)
+- [.NET AI Documentation](https://learn.microsoft.com/dotnet/ai/)
+- [Microsoft.Extensions.AI Documentation](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai)
