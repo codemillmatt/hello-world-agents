@@ -11,7 +11,7 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
     <PackageReference Include="Microsoft.Agents.Workflows" Version="*-*" />
     <PackageReference Include="Microsoft.Agents.AI" Version="*-*" />
-    <PackageReference Include="Microsoft.Extensions.AI.Agents.Hosting" Version="*-*" />
+    <PackageReference Include="Microsoft.Agents.AI.Hosting" Version="*-*" />
     <PackageReference Include="Aspire.Azure.AI.Inference" Version="9.5.0-preview.1.25474.7" />
   </ItemGroup>
 

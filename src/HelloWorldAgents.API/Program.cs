@@ -3,7 +3,7 @@ using Microsoft.Agents.AI;
 using Microsoft.Agents.Workflows;
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.Extensions.AI;
-using Microsoft.Extensions.AI.Agents.Hosting;
+using Microsoft.Agents.AI.Hosting;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
