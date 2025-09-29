@@ -1,11 +1,7 @@
 ﻿using Microsoft.Agents.Workflows;
 using Microsoft.Extensions.AI;
 using System.ComponentModel;
-using Azure.AI.OpenAI;
-using Azure.Identity;
 using Microsoft.Agents.AI;
-using OllamaSharp;
-using OpenAI.Chat;
 using Azure.AI.Inference;
 using Azure;
 
@@ -38,7 +34,7 @@ AIAgent editor = new ChatClientAgent(
         Instructions = "Make the story more engaging, fix grammar, and enhance the plot."
     });
 
-// Using AgentWorkflowBuilder for GroupChat
+// Create a workflow that connects writer to editor
 Workflow workflow =
     AgentWorkflowBuilder
         .BuildSequential(writer, editor);
