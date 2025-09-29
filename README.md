@@ -139,12 +139,14 @@ For more details, see the [.NET Aspire Dashboard documentation](https://learn.mi
 ## Agent Workflows
 
 ### Sequential Workflow
+
 The console application demonstrates a sequential workflow where the Writer creates content first, then the Editor reviews and improves it.
 
 ### Group Chat Workflow
+
 The API uses a round-robin group chat manager that allows agents to collaborate iteratively with a maximum of 2 iterations.
 
-## API Endpoints
+## ndpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
