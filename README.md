@@ -60,7 +60,7 @@ Once your codespace is ready, you can immediately start building and running the
 
 ### Configure GitHub Token Environment Variable
 
-> **Important** 
+> [!IMPORTANT]<br>
 > If you run the sample in GitHub Codespaces you do not need to create a GitHub Token and configure it. Codespaces automatically provides one.
 
 This project can use GitHub-hosted models. To enable access outside of Codespaces, create a GitHub Personal Access Token (PAT) with the `models` scope and expose it to the app using an environment variable named `GITHUB_TOKEN`.
@@ -174,6 +174,7 @@ Files located in `src/HelloWorldAgents.API/wwwroot/`:
 4. Add to workflow configuration
 
 Example:
+
 ```csharp
 builder.AddAIAgent("MyAgent", (sp, key) =>
 {
