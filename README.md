@@ -151,20 +151,7 @@ The API uses a round-robin group chat manager that allows agents to collaborate 
 | `/index.html` | GET | Interactive web chat UI (main development/testing interface) |
 | `/agent/chat` | GET | Initiate agent collaboration with a prompt |
 
-## Development
-
-### Web Chat UI
-
-The web chat interface is built with:
-
-- **HTML/CSS/JavaScript**: Clean, responsive design
-- **Marked.js**: Markdown rendering for formatted stories
-- **Static file serving**: Hosted directly from the API
-
-Files located in `src/HelloWorldAgents.API/wwwroot/`:
-- `index.html`: Main chat interface
-- `styles.css`: Responsive styling
-- `main.js`: Chat logic and Markdown rendering
+## Modify and extend the sample
 
 ### Adding New Agents
 
@@ -196,6 +183,19 @@ Agents can use custom tools defined as static methods:
 [Description("Description of what the tool does")]
 string MyTool(string parameter) => "Result";
 ```
+
+### Web Chat UI
+
+The web chat interface is built with:
+
+- **HTML/CSS/JavaScript**: Clean, responsive design
+- **Marked.js**: Markdown rendering for formatted stories
+- **Static file serving**: Hosted directly from the API
+
+Files located in `src/HelloWorldAgents.API/wwwroot/`:
+- `index.html`: Main chat interface
+- `styles.css`: Responsive styling
+- `main.js`: Chat logic and Markdown rendering
 
 ## Dependencies
 
