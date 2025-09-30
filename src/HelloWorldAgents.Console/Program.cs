@@ -2,14 +2,17 @@
 using Microsoft.Extensions.AI;
 using System.ComponentModel;
 using Microsoft.Agents.AI;
-using Azure.AI.Inference;
-using Azure;
+using OpenAI;
+using OpenAI.Chat;
+using System.Net;
+using System.ClientModel;
 
 IChatClient chatClient =
-    new ChatCompletionsClient(
-        new Uri("https://models.github.ai/inference"),
-        new AzureKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")!))
-        .AsIChatClient("gpt-4o-mini");
+    new ChatClient(
+            "gpt-4o-mini",
+            new ApiKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")!),
+            new OpenAIClientOptions { Endpoint = new Uri("https://models.github.ai/inference") })
+        .AsIChatClient();
 
 AIAgent writer = new ChatClientAgent(
     chatClient,
