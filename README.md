@@ -146,7 +146,7 @@ The console application demonstrates a sequential workflow where the Writer crea
 
 The API uses a round-robin group chat manager that allows agents to collaborate iteratively with a maximum of 2 iterations.
 
-## ndpoints
+## Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -158,9 +158,9 @@ The API uses a round-robin group chat manager that allows agents to collaborate 
 ### Adding New Agents
 
 1. Create a new agent using `ChatClientAgent`
-2. Define custom instructions and tools
-3. Register the agent in the DI container
-4. Add to workflow configuration
+1. Define custom instructions and tools
+1. Register the agent in the DI container
+1. Add to workflow configuration
 
 Example:
 
@@ -202,6 +202,7 @@ Files located in `src/HelloWorldAgents.API/wwwroot/`:
 ## Dependencies
 
 - **Microsoft.Agents.Workflows**: Agent workflow orchestration
+- **Microsoft.Agents.AI**: Core agent abstractions
 - **Microsoft.Extensions.AI**: Core AI abstractions and GitHub Models integration
 
 ## Resources

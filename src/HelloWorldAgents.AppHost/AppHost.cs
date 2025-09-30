@@ -8,7 +8,7 @@ var chatModel = builder.AddGitHubModel("chat", GitHubModel.OpenAI.OpenAIGPT4oMin
 
 var api =
     builder.AddProject<HelloWorldAgents_API>("api")
-        .WithIconName("brainSparkle")
+        .WithIconName("BrainSparkle")
         .WithEnvironment("MODEL_NAME", GitHubModel.OpenAI.OpenAIGPT4oMini.Id)
         .WithReference(chatModel);
 
