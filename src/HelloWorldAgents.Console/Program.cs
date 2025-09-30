@@ -4,7 +4,6 @@ using System.ComponentModel;
 using Microsoft.Agents.AI;
 using OpenAI;
 using OpenAI.Chat;
-using System.Net;
 using System.ClientModel;
 
 IChatClient chatClient =
