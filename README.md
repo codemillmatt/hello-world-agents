@@ -207,8 +207,8 @@ Files located in `src/HelloWorldAgents.API/wwwroot/`:
 
 ## Resources
 
-- [Microsoft Agent Framework Documentation](https://learn.microsoft.com/dotnet/ai/)
+- [Microsoft Agent Framework Documentation](https://aka.ms/dotnet/agent-framework/docs)
 - [.NET Aspire Documentation](https://learn.microsoft.com/dotnet/aspire/)
 - [GitHub Models Documentation](https://docs.github.com/en/github-models)
 - [.NET AI Documentation](https://learn.microsoft.com/dotnet/ai/)
-- [Microsoft.Extensions.AI Documentation](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai)
+- [Microsoft.Extensions.AI Documentation](https://learn.microsoft.com/dotnet/ai/microsoft-extensions-ai)
