@@ -1,18 +1,21 @@
 using Aspire.Hosting.GitHub;
-using Microsoft.Extensions.Hosting;
-using Projects;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var chatModel = builder.AddGitHubModel("chat", GitHubModel.OpenAI.OpenAIGPT4oMini);
+var model = GitHubModel.OpenAI.OpenAIGPT4oMini;
+
+var chatDeployment = builder.AddGitHubModel("chat", model);
 
 var api =
-    builder.AddProject<HelloWorldAgents_API>("api")
+    builder.AddProject<Projects.HelloWorldAgents_API>("api")
         .WithIconName("BrainSparkle")
-        .WithEnvironment("MODEL_NAME", GitHubModel.OpenAI.OpenAIGPT4oMini.Id)
-        .WithReference(chatModel);
+        .WithEnvironment("MODEL_NAME", model.Id)
+        .WithReference(chatDeployment);
 
-if (builder.Environment.IsDevelopment())
+// Expose the sample Chat UI during dev time
+if (builder.ExecutionContext.IsRunMode)
+{
     api.WithUrl("/index.html", "ChatUI");
+}
 
 builder.Build().Run();

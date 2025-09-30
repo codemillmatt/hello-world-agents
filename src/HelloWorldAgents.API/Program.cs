@@ -1,10 +1,8 @@
 using System.ComponentModel;
 using Microsoft.Agents.AI;
-using Microsoft.Agents.Workflows;
-using Microsoft.AspNetCore.OpenApi;
+using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.AI;
 using Microsoft.Agents.AI.Hosting;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,8 +13,7 @@ builder.AddServiceDefaults();
 builder.Services.AddOpenApi();
 
 // Uncomment to use GitHub Models
-builder
-    .AddAzureChatCompletionsClient("chat", settings =>
+builder.AddOpenAIClient("chat", settings =>
     {
         settings.EnableSensitiveTelemetryData = true;
     })
