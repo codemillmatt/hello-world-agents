@@ -23,7 +23,7 @@ This will create a new codespace with all dependencies pre-installed and configu
 
 - .NET 9.0 SDK
 - Docker support
-- .NET Aspire tooling
+- Aspire CLI + tooling
 - Git integration
 
 Once your codespace is ready, you can immediately start building and running the agents!
@@ -48,7 +48,7 @@ Once your codespace is ready, you can immediately start building and running the
 - **Web Chat UI**: Interactive JavaScript chat interface with Markdown rendering
 - **Web API**: RESTful endpoint for agent interactions
 - **Console App**: Direct agent interaction example
-- **Aspire Integration**: Cloud-ready orchestration and observability with .NET Aspire
+- **Aspire Integration**: Cloud-ready orchestration and observability with Aspire
 
 ## Prerequisites
 
@@ -114,7 +114,7 @@ This will start the Aspire dashboard and all required services, including the Mi
 
 ## How to Use Chat UI (Development Experience)
 
-1. Open the .NET Aspire dashboard
+1. Open the Aspire dashboard
 1. Select the **Chat UI** URL for the api resource.
 
     ![Aspire Dashboard](images/dashboard.png)
@@ -134,7 +134,7 @@ This will start the Aspire dashboard and all required services, including the Mi
 
     ![GenAI Trace](images/genai-trace.png)
 
-For more details, see the [.NET Aspire Dashboard documentation](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/overview?tabs=bash).
+For more details, see the [Aspire Dashboard documentation](https://learn.microsoft.com/dotnet/aspire/fundamentals/dashboard/overview?tabs=bash).
 
 ## Agent Workflows
 
@@ -208,7 +208,7 @@ Files located in `src/HelloWorldAgents.API/wwwroot/`:
 ## Resources
 
 - [Microsoft Agent Framework Documentation](https://aka.ms/dotnet/agent-framework/docs)
-- [.NET Aspire Documentation](https://learn.microsoft.com/dotnet/aspire/)
+- [Aspire Documentation](https://learn.microsoft.com/dotnet/aspire/)
 - [GitHub Models Documentation](https://docs.github.com/en/github-models)
 - [.NET AI Documentation](https://learn.microsoft.com/dotnet/ai/)
 - [Microsoft.Extensions.AI Documentation](https://learn.microsoft.com/dotnet/ai/microsoft-extensions-ai)
