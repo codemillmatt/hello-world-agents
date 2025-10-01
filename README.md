@@ -52,8 +52,8 @@ Once your codespace is ready, you can immediately start building and running the
 
 ## Prerequisites
 
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Aspire CLI](https://learn.microsoft.com/dotnet/aspire/cli/overview)
+- [The latest .NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+- [The latest Aspire CLI](https://learn.microsoft.com/dotnet/aspire/cli/overview)
 - A personal access token (PAT) with the `models` scope, which you can create in [settings](https://github.com/settings/tokens). For more details, see the [GitHub documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens?source=post_page-----3474aac2c6f2---------------------------------------#creating-a-personal-access-token-classic)
 
 ## Getting Started
@@ -83,6 +83,9 @@ export GITHUB_TOKEN="YOUR-GITHUB-TOKEN"
 After setting the variable, run the application as normal. The app will detect `GITHUB_TOKEN` and use it when calling GitHub Models.
 
 ### 2. Clone and Build
+
+> [!IMPORTANT]<br>
+> Verify you have [.NET 9.0.200](https://dotnet.microsoft.com/download/dotnet/9.0) or later and the [Aspire CLI 9.5.0](https://learn.microsoft.com/dotnet/aspire/cli/overview) or later to successfully run the CLI commands.
 
 ```bash
 git clone <repository-url>
